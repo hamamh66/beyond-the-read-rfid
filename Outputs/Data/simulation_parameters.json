@@ -1,0 +1,9 @@
+{
+  "p_miss": 0.08,
+  "p_dup": 0.08,
+  "p_false": 0.04,
+  "rssi_noise": 2.5,
+  "phase_noise": 0.18,
+  "p_delay": 0.05,
+  "p_reader_fail": 0.02
+}
