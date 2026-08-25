@@ -1,0 +1,8 @@
+Method,StateAccuracy,StateMacroF1,TrajSimilarity,ExactRouteRate,GraphInconsistency,Note
+Full framework (GT-CRF),0.9338,0.9336,0.9006,0.4738,0.0267,graph in objective + CRF + calibration + repair
+- process graph G,0.9719,0.9718,0.8564,0.319,0.1678,free transition potentials
+"- attention (GRU encoder, no G)",0.9797,0.9796,0.8675,0.3333,0.1487,recurrent temporal encoder
+- structured decoding (per-event RF),0.9688,0.9687,0.8497,0.2929,0.1851,no temporal coupling
+- end-to-end structure (RF + post-hoc Viterbi),0.946,0.9458,0.9077,0.4857,0.0393,graph used at inference only
+- learning (raw reader stream),0.9534,0.9533,0.8198,0.231,0.2306,no model
+Full framework + counterfactual repair,,,0.928,,0.0,minimum-cost repair applied to the decoded route

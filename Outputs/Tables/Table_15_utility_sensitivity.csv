@@ -1,0 +1,73 @@
+Policy,LambdaFalseAlarm,LambdaMissed,LambdaVerify,Utility
+Proposed (uncertainty + dual diagnosis),0.5,1.0,0.15,-0.12928571428571428
+Always accept,0.5,1.0,0.15,0.21904761904761905
+Always verify,0.5,1.0,0.15,-0.15
+Confidence-only abstention,0.5,1.0,0.15,-0.105
+Proposed (uncertainty + dual diagnosis),0.5,1.0,0.35,-0.2826190476190476
+Always accept,0.5,1.0,0.35,0.21904761904761905
+Always verify,0.5,1.0,0.35,-0.35
+Confidence-only abstention,0.5,1.0,0.35,-0.2926190476190476
+Proposed (uncertainty + dual diagnosis),0.5,2.0,0.15,-0.13642857142857143
+Always accept,0.5,2.0,0.15,-0.0357142857142857
+Always verify,0.5,2.0,0.15,-0.15
+Confidence-only abstention,0.5,2.0,0.15,-0.11214285714285713
+Proposed (uncertainty + dual diagnosis),0.5,2.0,0.35,-0.2897619047619047
+Always accept,0.5,2.0,0.35,-0.0357142857142857
+Always verify,0.5,2.0,0.35,-0.35
+Confidence-only abstention,0.5,2.0,0.35,-0.29976190476190473
+Proposed (uncertainty + dual diagnosis),0.5,4.0,0.15,-0.15071428571428572
+Always accept,0.5,4.0,0.15,-0.5452380952380952
+Always verify,0.5,4.0,0.15,-0.15
+Confidence-only abstention,0.5,4.0,0.15,-0.12642857142857142
+Proposed (uncertainty + dual diagnosis),0.5,4.0,0.35,-0.304047619047619
+Always accept,0.5,4.0,0.35,-0.5452380952380952
+Always verify,0.5,4.0,0.35,-0.35
+Confidence-only abstention,0.5,4.0,0.35,-0.314047619047619
+Proposed (uncertainty + dual diagnosis),1.0,1.0,0.15,-0.17452380952380953
+Always accept,1.0,1.0,0.15,0.21904761904761905
+Always verify,1.0,1.0,0.15,-0.15
+Confidence-only abstention,1.0,1.0,0.15,-0.105
+Proposed (uncertainty + dual diagnosis),1.0,1.0,0.35,-0.32785714285714285
+Always accept,1.0,1.0,0.35,0.21904761904761905
+Always verify,1.0,1.0,0.35,-0.35
+Confidence-only abstention,1.0,1.0,0.35,-0.2926190476190476
+Proposed (uncertainty + dual diagnosis),1.0,2.0,0.15,-0.18166666666666667
+Always accept,1.0,2.0,0.15,-0.0357142857142857
+Always verify,1.0,2.0,0.15,-0.15
+Confidence-only abstention,1.0,2.0,0.15,-0.11214285714285713
+Proposed (uncertainty + dual diagnosis),1.0,2.0,0.35,-0.33499999999999996
+Always accept,1.0,2.0,0.35,-0.0357142857142857
+Always verify,1.0,2.0,0.35,-0.35
+Confidence-only abstention,1.0,2.0,0.35,-0.29976190476190473
+Proposed (uncertainty + dual diagnosis),1.0,4.0,0.15,-0.19595238095238093
+Always accept,1.0,4.0,0.15,-0.5452380952380952
+Always verify,1.0,4.0,0.15,-0.15
+Confidence-only abstention,1.0,4.0,0.15,-0.12642857142857142
+Proposed (uncertainty + dual diagnosis),1.0,4.0,0.35,-0.34928571428571425
+Always accept,1.0,4.0,0.35,-0.5452380952380952
+Always verify,1.0,4.0,0.35,-0.35
+Confidence-only abstention,1.0,4.0,0.35,-0.314047619047619
+Proposed (uncertainty + dual diagnosis),2.0,1.0,0.15,-0.265
+Always accept,2.0,1.0,0.15,0.21904761904761905
+Always verify,2.0,1.0,0.15,-0.15
+Confidence-only abstention,2.0,1.0,0.15,-0.105
+Proposed (uncertainty + dual diagnosis),2.0,1.0,0.35,-0.41833333333333333
+Always accept,2.0,1.0,0.35,0.21904761904761905
+Always verify,2.0,1.0,0.35,-0.35
+Confidence-only abstention,2.0,1.0,0.35,-0.2926190476190476
+Proposed (uncertainty + dual diagnosis),2.0,2.0,0.15,-0.27214285714285713
+Always accept,2.0,2.0,0.15,-0.0357142857142857
+Always verify,2.0,2.0,0.15,-0.15
+Confidence-only abstention,2.0,2.0,0.15,-0.11214285714285713
+Proposed (uncertainty + dual diagnosis),2.0,2.0,0.35,-0.42547619047619045
+Always accept,2.0,2.0,0.35,-0.0357142857142857
+Always verify,2.0,2.0,0.35,-0.35
+Confidence-only abstention,2.0,2.0,0.35,-0.29976190476190473
+Proposed (uncertainty + dual diagnosis),2.0,4.0,0.15,-0.2864285714285714
+Always accept,2.0,4.0,0.15,-0.5452380952380952
+Always verify,2.0,4.0,0.15,-0.15
+Confidence-only abstention,2.0,4.0,0.15,-0.12642857142857142
+Proposed (uncertainty + dual diagnosis),2.0,4.0,0.35,-0.43976190476190474
+Always accept,2.0,4.0,0.35,-0.5452380952380952
+Always verify,2.0,4.0,0.35,-0.35
+Confidence-only abstention,2.0,4.0,0.35,-0.314047619047619

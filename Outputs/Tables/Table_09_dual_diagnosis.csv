@@ -1,0 +1,8 @@
+Score,Target,LabelsRequired,AUROC,AUPRC
+Mechanistic: observation distortion,A_s,no,0.8498,0.931
+Mechanistic: irreducible repair cost,A_o,no,0.6054,0.3825
+Mechanistic: evidence-sacrifice gap,A_o,no,0.5778,0.3532
+Supervised: neural auxiliary head,A_s,yes,0.6263,0.8367
+Supervised: neural auxiliary head (Ao),A_o,yes,0.8074,0.6719
+Supervised: GBM on repair features,A_s,yes,0.9011,0.964
+Supervised: GBM on repair features (Ao),A_o,yes,0.6707,0.4143

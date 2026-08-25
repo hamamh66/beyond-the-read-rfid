@@ -1,0 +1,3 @@
+Method,MissedCheckpointPrecision,MissedCheckpointRecall,MissedCheckpointF1,DeletionRateProposed,FalseReadRateTrue,MeanEdits,MeanRepairCost,ConsistencyBefore,ConsistencyAfter,SimilarityBefore,SimilarityAfter
+Repair on raw reader sequence,0.6818,0.3529,0.4651,0.8905,0.5738,1.6119,1.6119,0.2214,1.0,0.8198,0.9156
+Repair on GT-CRF decoded trajectory,0.5647,0.3765,0.4518,0.0238,0.5738,0.4976,0.4976,0.6619,1.0,0.9006,0.928

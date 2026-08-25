@@ -1,0 +1,5 @@
+Policy,MeanUtility,WorstCase,BestCase
+Always accept,-0.1206,-0.5452,0.219
+Confidence-only abstention,-0.2083,-0.314,-0.105
+Always verify,-0.25,-0.35,-0.15
+Proposed (uncertainty + dual diagnosis),-0.2758,-0.4398,-0.1293

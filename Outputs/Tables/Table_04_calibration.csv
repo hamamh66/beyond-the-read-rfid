@@ -1,0 +1,4 @@
+Posterior,Temperature,ECE,Brier,NLL
+CRF marginals (raw),1.0,0.0182,0.0807,0.2137
+CRF marginals (temperature-scaled),1.6,0.0114,0.0801,0.1793
+RF per-event softmax,1.0,0.01,0.0411,0.0986

@@ -1,0 +1,13 @@
+asset_id,true_diagnosis,op_type,observed,reconstructed,repaired,repair_cost,explanation
+13,sensing,none,S0->S1->S2->S4->S6->S7,S0->S1->S2->S6->S7,S0->S1->S3->S5->S6->S7,2.0,It suffices to assume a missing read at checkpoint S3; a misread of S2 that should have been S5 to restore process consistency.
+42,sensing,none,S1->S6->S2->S3->S5->S6->S7,S1->S2->S3->S5->S6->S7,S0->S1->S2->S3->S5->S6->S7,1.0,It suffices to assume a missing read at checkpoint S0 to restore process consistency.
+49,operational,unauthorized_jump,S1->S5->S4->S5->S6->S7,S1->S3->S4->S5->S6->S7,S0->S1->S3->S4->S5->S6->S7,1.0,It suffices to assume a missing read at checkpoint S0 to restore process consistency.
+58,operational,mandatory_skip,S0->S1->S2->S3->S4->S6->S7,S0->S1->S2->S3->S4->S6->S7,S0->S1->S2->S3->S5->S6->S7,1.0,It suffices to assume a misread of S4 that should have been S5 to restore process consistency.
+89,sensing,none,S1->S2->S3->S4->S3->S4->S0->S4->S5->S6->S7,S1->S2->S3->S4->S5->S6->S7,S0->S1->S2->S3->S4->S5->S6->S7,1.0,It suffices to assume a missing read at checkpoint S0 to restore process consistency.
+93,sensing,none,S0->S1->S2->S3->S1->S0->S3->S4->S5->S6,S0->S1->S2->S3->S4->S5->S6,S0->S1->S2->S3->S4->S5->S6->S7,1.0,It suffices to assume a missing read at checkpoint S7 to restore process consistency.
+95,operational,excess_dwell,S0->S1->S2->S3->S6->S7,S0->S1->S2->S3->S6->S7,S0->S1->S2->S3->S5->S6->S7,1.0,It suffices to assume a missing read at checkpoint S5 to restore process consistency.
+182,operational,unauthorized_jump,S6->S7,S6->S7,S0->S1->S3->S5->S6->S7,4.0,It suffices to assume a missing read at checkpoint S0; a missing read at checkpoint S1; a missing read at checkpoint S3; a missing read at checkpoint S5 to restore process consistency.
+190,operational,unauthorized_jump,S0->S1->S2->S7,S0->S1->S2,S0->S1->S2->S3->S5->S6->S7,4.0,It suffices to assume a missing read at checkpoint S3; a missing read at checkpoint S5; a missing read at checkpoint S6; a missing read at checkpoint S7 to restore process consistency.
+275,sensing,none,S0->S1->S2->S3->S6->S3->S4->S6->S7,S0->S1->S2->S3->S4->S6->S7,S0->S1->S2->S3->S5->S6->S7,1.0,It suffices to assume a misread of S4 that should have been S5 to restore process consistency.
+279,operational,excess_dwell,S0->S1->S2->S3->S4->S3->S5->S6,S0->S1->S2->S3->S4->S5->S6,S0->S1->S2->S3->S4->S5->S6->S7,1.0,It suffices to assume a missing read at checkpoint S7 to restore process consistency.
+290,sensing,none,S0->S1->S3->S4->S6->S7,S0->S1->S3->S4->S6->S7,S0->S1->S3->S5->S6->S7,1.0,It suffices to assume a misread of S4 that should have been S5 to restore process consistency.

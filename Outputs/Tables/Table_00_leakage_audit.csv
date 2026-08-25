@@ -1,0 +1,3 @@
+Group,N,Members
+Model inputs (observable),16,"reader, rssi, phase_sin, phase_cos, dt_prev, dt_next, dt_prev_z, t_frac, pos_frac, same_reader_prev, same_reader_next, reader_run_len, reader_share, rssi_resid, reader_jump, n_obs_norm"
+Quarantined oracle (evaluation only),10,"A_o, A_s, op_type, oracle_delayed, oracle_dwell_max, oracle_failed_readers, oracle_latent, oracle_src, oracle_state, oracle_true_route"

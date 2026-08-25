@@ -1,0 +1,9 @@
+Capability,Conventional,ThisWork,Evidence
+Target of inference,classify each read as normal/anomalous,"reconstruct the latent trajectory p(z_t | x_1:t, G)",trajectory similarity 0.901 vs 0.820 for the raw stream
+Use of process knowledge,post-hoc filtering / rule check,graph potentials inside the training objective (Eq. 2),vs RF+Viterbi (graph at inference only): 0.901 vs 0.908
+Anomaly semantics,single undifferentiated anomaly score,separate p(A_s) and p(A_o) with a mechanistic derivation,see Table_09; label-free scores included
+Counterfactual explanation,"absent, or heuristic gap-filling",exact minimum-cost edit to the language of admissible paths,consistency restored on 100.0% of trajectories
+Explanation validation,not evaluated,edits scored against the injected corruption mechanism,missed-checkpoint F1 0.452
+Uncertainty guarantee,"softmax confidence, or marginal conformal assumed valid",degradation-adaptive conformal + Learn-then-Test risk control,see Table_06 (coverage under shift) and Table_12 (finite-sample guarantee)
+Decision layer,fixed threshold,five-action policy with cost-sensitivity analysis,see Table_16
+Evaluation integrity,corruption flags frequently used as input features,machine-checked leakage firewall,Table_00; assert_no_leakage() guards every design matrix

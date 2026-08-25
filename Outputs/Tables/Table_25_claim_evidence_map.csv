@@ -1,0 +1,14 @@
+Manuscript section,Claim,Supporting artefact
+4.1 Experimental configuration,"Corpus, partitions, prevalence","Table_01_partitions.csv, config.json"
+4.1 Baseline performance,Reconstruction vs 6 comparators,"Table_03_reconstruction.csv, Fig_02_reconstruction"
+4.2 Robustness,Single-factor + compound degradation,"Table_17_stress_single_factor.csv, Table_18_stress_compound.csv, Fig_09, Fig_10"
+4.3 Sensing vs operational diagnosis,"Dual anomaly scores, joint confusion","Table_09_dual_diagnosis.csv, Table_10_joint_diagnosis_confusion.csv, Fig_06"
+4.4 Uncertainty,"Calibration, conformal, coverage under shift","Table_04_calibration.csv, Table_05_conformal.csv, Table_06_conformal_under_shift.csv, Fig_03, Fig_04"
+4.4 Selective prediction,"LTT guarantee, risk-coverage, action mix","Table_11, Table_12, Table_13, Table_14, Fig_07"
+4.4 Counterfactual repair,"Fidelity, sparsity, identifiability, examples","Table_07_counterfactual_identifiability.csv, Table_08_counterfactual_examples.csv, Fig_05"
+4.5 Ablation,Component contributions,"Table_19_ablation.csv, Fig_11"
+4.5 Statistical analysis,"Repeated seeds, Holm-corrected Wilcoxon, Cliff's delta","Table_20, Table_21, Table_22"
+4.5 Operational utility,Cost-weight sensitivity,"Table_15, Table_16, Fig_08"
+4.6.1 Positioning,What is new and the evidence for it,Table_24_novelty_positioning.csv
+4.6.2 Limitations,Scope and threats to validity,Limitations.md
+3.11 Reproducibility,"Config hash, environment, cost","config.json, Table_23_computational_cost.csv, Results_Inventory.csv"

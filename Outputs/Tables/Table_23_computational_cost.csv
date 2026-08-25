@@ -1,0 +1,5 @@
+Component,Seconds,PerTrajectory_ms
+GT-CRF training (once),25.1055,
+RF baseline training (once),9.052,
+GT-CRF inference (decode + marginals),0.214,0.836
+Exact counterfactual repair,0.029,0.1134
