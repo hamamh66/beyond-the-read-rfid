@@ -1,0 +1,25 @@
+Parameter,Value,Provenance,Source
+reader.p_conducted_max_dbm,31.6 dBm,SPEC,ALR-9900+ datasheet
+reader.eirp_regulatory_dbm,36.0 dBm,SPEC,"4 W EIRP, FCC"
+reader.n_antenna_ports,4,SPEC,monostatic
+reader.rx_sensitivity_dbm,-70 dBm,ASSUMED,not published by Alien
+reader.power_control_global,True,ASSUMED,RFAttenuation reads as one scalar
+reader.rssi_per_read,True,ASSUMED,TagList RSSI field unconfirmed
+antenna.gain_dbic,8.5 dBic,SPEC,ALR-8696-C brochure
+antenna.hpbw_az_deg,65 deg,SPEC,single published figure
+antenna.hpbw_el_deg,65 deg,ASSUMED,elevation split not published
+antenna.front_to_back_db,20 dB,SPEC,ALR-8696-C
+antenna.axial_ratio_db,1.2 dB,SPEC,ALR-8696-C
+antenna.p_input_max_dbm,33 dBm,SPEC,2 W max input
+antenna.mass_kg,1.13 kg,SPEC,drives movement cost
+link.cable_loss_db,2.2 dB,SPEC,bundled 20 ft pigtail
+link.tag_sensitivity_dbm,-18 dBm,ASSUMED,Monza-class typical; swept
+link.tag_gain_dbi,2.0 dBi,ASSUMED,typical dipole tag
+link.polarization_loss_db,3 dB,DERIVED,RHCP reader vs linear tag
+pattern_exponent_n,4.070,DERIVED,cos^n fitted to 65 deg HPBW
+twin.ple,"(1.24, 1.5)",LIT,Cebecioglu 2022
+twin.rssi_noise_db,0.61 dB,LIT,Yang 2021
+twin.phase_noise_deg,8.1 deg,LIT,Yang 2021
+twin.metal_loss_db,"(8.0, 20.0)",LIT,Griffin 2006 / Choudhary 2024
+twin.liquid_loss_db,"(6.0, 18.0)",LIT,He 2019 / Claucherty 2024
+twin.orient_loss_db,"(0.0, 8.0)",LIT,Tatiparthi 2020

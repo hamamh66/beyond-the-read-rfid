@@ -1,0 +1,13 @@
+Gate,Status,Detail
+G1 monotone attenuation,PASS,mat1 0.57->0.02 | mat2 0.75->0.04
+G2 recovery to nominal,PASS,28 loaded | 0.875 -> 0.708
+G3 antenna pattern matches the ALR-8696-C datasheet,PASS,"8.5 dBic boresight, -3 dB at 32 deg, -11.5 dBic rear"
+G4 EIRP regulatory compliance,PASS,uncapped 37.9 dBm > 36 dBm cap -> conducted power capped at 29.7 dBm
+G5 antenna input power rating,PASS,27.5 dBm at the antenna vs 33 dBm rating (5.5 dB margin)
+G6 field plausibility,PASS,coverage 0.908 | mean RSSI -57.3 dBm
+G7 port failure degrades coverage,PASS,4 ports 0.892 -> 2 ports 0.558
+G8 firewall exposes no oracle field,PASS,"6 observable fields exposed, 4 quarantined"
+G9 deliberate breach is blocked,PASS,both breach attempts blocked
+G10 entropy discriminates degraded from healthy sensing,PASS,"H healthy 0.322 -> degraded 0.507 nats (separation 3.1 sd, 6/6 seeds)"
+G11 entropy uses no ground truth,PASS,entropy invariant to oracle-label permutation
+"G12 reduced contract degrades the estimator, and is measurable",PASS,"with RSSI H=0.313, acc=0.567 | without H=0.514, acc=0.483"

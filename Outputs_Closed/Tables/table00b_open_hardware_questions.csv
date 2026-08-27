@@ -1,0 +1,6 @@
+Open question,Why it matters,Bench test that resolves it
+Is RFAttenuation global or per antenna port?,Search-space dimension; whether selective power-down is an available action,"Set attenuation, measure EIRP at each port in turn"
+"Is RSSI reported per tag read, and in what units?","The estimator's main observable, and hence the controller's acquisition",Read a known tag; inspect TagList fields and custom-format macros
+What is the receiver sensitivity?,Which link (forward or reverse) limits range in each regime,Attenuate the reverse path until reads cease
+What is the elevation beamwidth?,Coverage geometry under elevation tilt,"Pattern measurement, or recover the original datasheet"
+What is the achievable tags/s with 4 ports cycling?,"Episode duration, and therefore the latency cost term",Time a full AntennaSequence cycle over N tags
