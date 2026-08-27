@@ -1,0 +1,107 @@
+{
+  "config": {
+    "seed": 20260826,
+    "room_m": [
+      12.0,
+      8.0,
+      3.0
+    ],
+    "n_zones": 8,
+    "n_assets": 120,
+    "n_antennas": 4,
+    "rail_height_m": 2.7,
+    "delta_max_m": 0.75,
+    "rot_max_deg": 30.0,
+    "power_global": true,
+    "p_min_dbm": 15.0,
+    "p_max_dbm": 29.700000000000003,
+    "ple_range": [
+      1.24,
+      1.5
+    ],
+    "shadow_sd_db": 3.0,
+    "rician_k_db": 7.0,
+    "rssi_noise_db": 0.61,
+    "phase_noise_deg": 8.1,
+    "metal_loss_db": [
+      8.0,
+      20.0
+    ],
+    "liquid_loss_db": [
+      6.0,
+      18.0
+    ],
+    "orient_loss_db": [
+      0.0,
+      8.0
+    ],
+    "false_read_rate": 0.0001,
+    "n_cycles": 4,
+    "budget_evals": 24,
+    "n_seeds": 5,
+    "eig_samples": 24,
+    "w": {
+      "coverage": 1.0,
+      "localization": 1.0,
+      "infogain": 0.6,
+      "uncertainty": 0.6,
+      "movement": 0.3,
+      "latency": 0.15
+    }
+  },
+  "reader": {
+    "model": "Alien ALR-9900+",
+    "f_min_mhz": 902.0,
+    "f_max_mhz": 928.0,
+    "f_centre_mhz": 915.0,
+    "n_channels": 50,
+    "channel_spacing_khz": 500.0,
+    "n_antenna_ports": 4,
+    "topology": "monostatic",
+    "p_conducted_max_dbm": 31.6,
+    "eirp_regulatory_dbm": 36.0,
+    "connector": "RP-TNC",
+    "control_protocol": "Alien Reader Protocol (text over TCP/23)",
+    "rx_sensitivity_dbm": -70.0,
+    "power_control_is_global": true,
+    "rf_attenuation_max_db": 31.0,
+    "rf_attenuation_step_db": 1.0,
+    "rssi_per_read": true
+  },
+  "antenna": {
+    "model": "Alien ALR-8696-C",
+    "gain_dbic": 8.5,
+    "polarization": "RHCP",
+    "hpbw_az_deg": 65.0,
+    "hpbw_el_deg": 65.0,
+    "front_to_back_db": 20.0,
+    "axial_ratio_db": 1.2,
+    "vswr_max": 1.4,
+    "p_input_max_dbm": 33.0,
+    "f_min_mhz": 865.0,
+    "f_max_mhz": 960.0,
+    "size_mm": [
+      259.0,
+      259.0,
+      34.0
+    ],
+    "mass_kg": 1.13,
+    "ip_rating": "IP54"
+  },
+  "link": {
+    "cable_loss_db": 2.2,
+    "tag_gain_dbi": 2.0,
+    "tag_sensitivity_dbm": -18.0,
+    "backscatter_loss_db": -8.0,
+    "polarization_loss_db": 3.0
+  },
+  "environment": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.0",
+    "quick_run": true,
+    "timestamp": "2026-08-26 18:58:38"
+  },
+  "config_hash": "cc68445bf457"
+}

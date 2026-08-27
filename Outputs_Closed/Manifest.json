@@ -1,0 +1,92 @@
+{
+  "config_hash": "cc68445bf457",
+  "environment": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.0",
+    "quick_run": true,
+    "timestamp": "2026-08-26 18:58:38"
+  },
+  "reader": "Alien ALR-9900+",
+  "antenna": "Alien ALR-8696-C",
+  "n_antennas": 4,
+  "gates": [
+    {
+      "gate": "G1 monotone attenuation",
+      "status": "PASS",
+      "detail": "mat1 0.57->0.02 | mat2 0.75->0.04"
+    },
+    {
+      "gate": "G2 recovery to nominal",
+      "status": "PASS",
+      "detail": "28 loaded | 0.875 -> 0.708"
+    },
+    {
+      "gate": "G3 antenna pattern matches the ALR-8696-C datasheet",
+      "status": "PASS",
+      "detail": "8.5 dBic boresight, -3 dB at 32 deg, -11.5 dBic rear"
+    },
+    {
+      "gate": "G4 EIRP regulatory compliance",
+      "status": "PASS",
+      "detail": "uncapped 37.9 dBm > 36 dBm cap -> conducted power capped at 29.7 dBm"
+    },
+    {
+      "gate": "G5 antenna input power rating",
+      "status": "PASS",
+      "detail": "27.5 dBm at the antenna vs 33 dBm rating (5.5 dB margin)"
+    },
+    {
+      "gate": "G6 field plausibility",
+      "status": "PASS",
+      "detail": "coverage 0.908 | mean RSSI -57.3 dBm"
+    },
+    {
+      "gate": "G7 port failure degrades coverage",
+      "status": "PASS",
+      "detail": "4 ports 0.892 -> 2 ports 0.558"
+    },
+    {
+      "gate": "G8 firewall exposes no oracle field",
+      "status": "PASS",
+      "detail": "6 observable fields exposed, 4 quarantined"
+    },
+    {
+      "gate": "G9 deliberate breach is blocked",
+      "status": "PASS",
+      "detail": "both breach attempts blocked"
+    },
+    {
+      "gate": "G10 entropy discriminates degraded from healthy sensing",
+      "status": "PASS",
+      "detail": "H healthy 0.322 -> degraded 0.507 nats (separation 3.1 sd, 6/6 seeds)"
+    },
+    {
+      "gate": "G11 entropy uses no ground truth",
+      "status": "PASS",
+      "detail": "entropy invariant to oracle-label permutation"
+    },
+    {
+      "gate": "G12 reduced contract degrades the estimator, and is measurable",
+      "status": "PASS",
+      "detail": "with RSSI H=0.313, acc=0.567 | without H=0.514, acc=0.483"
+    },
+    {
+      "gate": "G13 projection always returns a feasible configuration",
+      "status": "PASS",
+      "detail": "200/200 projections feasible; 200 raw proposals were infeasible"
+    }
+  ],
+  "tables": [
+    "table00_provenance.csv",
+    "table00b_open_hardware_questions.csv",
+    "table01_gates.csv",
+    "table02_per_run.csv",
+    "table03_controller_summary.csv",
+    "table04_paired_tests.csv"
+  ],
+  "figures": [
+    "Fig01_closed_loop_results.png"
+  ]
+}

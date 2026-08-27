@@ -1,0 +1,45 @@
+============================================================================
+RESULTS-DERIVED READING (generated from the numbers above)
+============================================================================
+All controllers are scored on the SAME objective (J_full); only the
+read-rate ablation optimises a reduced one.
+
+THE FIXED COMMISSIONING TOPOLOGY WINS (+1.4884).
+  No controller beat leaving the antennas where they were. At this budget and
+  these cost weights, reconfiguration does not pay for itself: movement and
+  latency cost more than the coverage they buy back. That is a result about
+  the operating point, not a bug - but it does mean this run provides no
+  evidence for closed-loop reconfiguration. Raising the budget, lowering the
+  movement weight, or a harsher disturbance are the things that would change
+  it, and each should be reported as the change it is.
+
+THE ABLATION THAT TESTS THE PREMISE  (InfoBO - ReadRateBO, final J):
+  difference +0.2128  95% CI [-0.0093, +0.4293]  Wilcoxon p=0.1875  n=5 seeds
+  -> NO DEMONSTRATED ADVANTAGE at this budget: the interval spans zero.
+     The 'uncertainty-guided' premise is NOT supported by this run. Do not
+     report a benefit. Either the budget is too small to separate them, the
+     EIG estimator is too noisy, or the term genuinely does not help here.
+
+RECOVERY AFTER THE UNANNOUNCED REGIME CHANGE
+  Common bar: 90% of the commissioning topology's pre-change
+  coverage on the same scene - the same bar for every controller.
+  Bar = 0.780 coverage; best post-change coverage achieved by ANY controller = 0.775
+  -> The bar was NOT attainable by anyone after the fault. A 0% recovery
+     rate below therefore reflects the severity of the disturbance, not a
+     failure of any particular controller. Post-change coverage is the
+     meaningful comparison here.
+  Fixed                recovery rate    0%   mean time to recover: never
+  SimulatedAnnealing   recovery rate    0%   mean time to recover: never
+  InfoBO               recovery rate    0%   mean time to recover: never
+  Random               recovery rate    0%   mean time to recover: never
+  ReadRateBO           recovery rate    0%   mean time to recover: never
+
+COST AND CONSTRAINT BEHAVIOUR:
+  Fixed                movement   0.00   infeasible proposals before projection: 0.0
+  SimulatedAnnealing   movement   4.28   infeasible proposals before projection: 6.4
+  InfoBO               movement  11.71   infeasible proposals before projection: 0.0
+  Random               movement  12.06   infeasible proposals before projection: 0.0
+  ReadRateBO           movement  11.79   infeasible proposals before projection: 0.0
+
+Config hash cc68445bf457 | 5 seeds x 24 evaluations | QUICK_RUN=True
+ASSUMED constants still unresolved: 6 (see table00b_open_hardware_questions.csv)
